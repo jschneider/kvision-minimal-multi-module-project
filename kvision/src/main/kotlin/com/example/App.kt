@@ -1,7 +1,7 @@
 package com.example
 
 import pl.treksoft.kvision.Application
-import pl.treksoft.kvision.html.div
+import pl.treksoft.kvision.html.*
 import pl.treksoft.kvision.i18n.DefaultI18nManager
 import pl.treksoft.kvision.i18n.I18n
 import pl.treksoft.kvision.i18n.I18n.tr
@@ -26,7 +26,9 @@ class App : Application() {
 
         root("kvapp") {
             div(tr("This is a localized message."))
-            // TODO
+
+            button("A button with an icon", "fas fa-asterisk")
+            link("A link with an icon", "https://google.com", "fab fa-google")
         }
     }
 }
