@@ -3,13 +3,9 @@ import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpack
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 
 plugins {
-    val kotlinVersion: String by System.getProperties()
-    id("kotlinx-serialization") version kotlinVersion
-    kotlin("js") version kotlinVersion
+    id("kotlinx-serialization")
+    kotlin("js")
 }
-
-version = "1.0.0-SNAPSHOT"
-group = "com.example"
 
 repositories {
     mavenCentral()
