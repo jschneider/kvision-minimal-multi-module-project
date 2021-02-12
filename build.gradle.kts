@@ -21,7 +21,8 @@ allprojects {
 
       freeCompilerArgs = listOf(
         "-progressive",
-        "-Xinline-classes"
+        "-Xinline-classes",
+        "-Xir-property-lazy-initialization" //ATTENTION! DOES NOT WORK WITH THIS PARAMETER
       )
 
       allWarningsAsErrors = false
