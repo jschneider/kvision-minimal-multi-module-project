@@ -19,11 +19,16 @@ allprojects {
       languageVersion = "1.5"
       apiVersion = "1.5"
 
-      freeCompilerArgs = listOf("-progressive", "-Xinline-classes", "-Xir-property-lazy-initialization")
+      freeCompilerArgs = listOf(
+        "-progressive",
+        "-Xinline-classes"
+      )
 
       allWarningsAsErrors = false
       suppressWarnings = true
       verbose = false
+
+      moduleKind = "umd"
 
       kotlinOptions.metaInfo = true
       sourceMap = true
